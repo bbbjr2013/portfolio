@@ -6,7 +6,7 @@ body{
 } 
 
 #tabs{
-    padding: 10em 0em 0em 10em;
+  /*  padding: 10em 0em 0em 10em;*/
 }
 
 /* jquery vertical start ---------------------*/
@@ -26,11 +26,20 @@ body{
 }
 
 /* jquery vertical end ------------------------*/
+div.nav{
+  display: block;
+  float: left;
+  width: 40%;
+  margin-left: calc(10em - 100px);
+  margin-right: 100px;
+}
 
 div.content{
-  float:left;
-  margin-left: 30em;
-  margin-top: -12em;
+  display: block;
+  margin-top: 10em;
+  width: calc(60% - 10em);
+  overflow-y: auto;
+  height: calc(77vh - 2px)
 }
 
 /* li styles -------------------------------- */
