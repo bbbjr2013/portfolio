@@ -31,6 +31,13 @@ $(document).on('ready', function() {
 			nextArrow:"<img class='next slick-next' src='./images/next.svg'>",
 		});
 
+	// nav onclick
+	$(".nav-list").click(function(e){
+		var element = e.currentTarget;
+		$('.nav-list').removeClass('active-nav');
+		element.classList.add('active-nav');
+	})
+
 	});
 
 

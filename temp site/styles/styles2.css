@@ -16,6 +16,31 @@ a{
   text-decoration: underline;
 }
 
+a.dribbble{
+  color: #ea4c89;
+}
+
+a.github{
+  color: black;
+}
+
+a.twitter{
+  color:#1DA1F2;
+  /* text-decoration: none; */
+}
+
+a.resume{
+  /* text-decoration: none; */
+}
+
+a.inspiration{
+  text-decoration: none;
+}
+
+iframe{
+  margin-top: 5em;
+}
+
 /* jquery vertical start ---------------------*/
 
 .ui-tabs.ui-tabs-vertical .ui-tabs-nav li a {
@@ -72,6 +97,7 @@ div.project{
   display: block;
   margin-bottom: 80px;
   visibility: visible;
+  /* margin-top: 10px; */
 }
 
 div.slide{
@@ -92,6 +118,14 @@ div.details{
   overflow-y: auto;
 }
 
+div.inspirations{
+  width: 47em;
+}
+
+div.media{
+  margin-top: 2em;
+}
+
 /* li styles -------------------------------- */
 
 li.name{
@@ -103,6 +137,10 @@ li.list{
   padding-left: 3.3em;
 }
 
+li.nodec{
+text-decoration: none;
+}
+
 li{
   color: black;
   font-family: "Work Sans";
@@ -112,7 +150,16 @@ li{
   white-space: nowrap;
   overflow: hidden;
   width: 12em;
+  text-decoration: underline;
   animation: type 1.2s steps(60, end);
+}
+
+li:active{
+  font-weight: 600;
+}
+
+.active-nav{
+  font-weight: 600;
 }
 
 /* li children -------------------------------- */
@@ -140,6 +187,8 @@ li:nth-child(6){
 li a{
   color: black;
   text-decoration: none;
+  outline: none;
+  border: none;
 }
 
 /* Slider -------------------------------- */
@@ -323,12 +372,14 @@ h5{
   font-family: "Work Sans";
   font-size: 1.5em;
   font-weight: 300;
-  line-height: 1.2em;
-  margin: 0.5em 0 0 0;
+  line-height: 1.4em;
+  margin: 0.5em 0 1em 0;
   padding: 0 0.5em 0 0.5em;
-  width: 4.5em;
+  width: intrinsic;           /* Safari/WebKit uses a non-standard name */
+  width: -moz-max-content;    /* Firefox/Gecko */
+  width: -webkit-max-content;
   white-space: nowrap;
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: black;
 }
 
@@ -339,7 +390,7 @@ h6{
   font-weight: 500;
   line-height: 1.6em;
   width: 35em;
-  margin-top: 5em;
+  margin-top: 3em;
   margin-bottom: 0.5em;
 }
 
@@ -364,9 +415,7 @@ img{
   margin-bottom: 0.5em;
 }
 
-.inspirations{
-  width: 47em;
-}
+
 
 p1{
   margin: 0em 0.1em 0em 0.9em;
